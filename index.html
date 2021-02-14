@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pro HAcker</title>
+  <script type="text/javascript">
+  	document.onreadystatechange = function() { 
+	if (document.readyState !== "complete") { 
+		document.querySelector("body").style.visibility = "hidden"; 
+		document.querySelector("#loader").style.visibility = "visible"; 
+	} else { 
+		document.querySelector("#loader").style.display = "none"; 
+		document.querySelector("body").style.visibility = "visible"; 
+	} 
+}; 
+
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<
+</head>
+<body oncontextmenu="return false;">
+<div id = "loader">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div class="animation-area">
+    <ul class="box-area">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+
+<div id="cav">
+  <div id="lock">
+   <div id="hhhh"><i class="fa fa-lock" id="ll"></i></div>
+   <div class="pulse" id="hh"></div>
+  </div>
+
+    <p id="text">This Website is Password Protected.</p>
+    <div class="text">
+    <form action = "#" onsubmit="pr()" autocomplete="off">
+  <div class="input-field">
+    <input type="password" id="name" required autofocus onfocus="this.value=''" />
+    <label for="name" id="hj">Enter The Password....</label>
+  </div>
+
+  <p id="ta">You will be Redirected to the Website in 5 sec.</p>
+  <input type="submit" class="btn"  value="Submit" style="font-size: 16px"><br />
+</form>
+</div>
+    <div class="col-sm-6 text-center"><div class="loader3"  id="sc">
+    <span></span>
+    <span></span>
+
+</div></div>
+    
+</div>
+<p id="status">Status.Normal</p>
+
+
+ <script type='text/javascript'>// disable right click
+$(function() {
+    $(this).bind("contextmenu", function(e) {
+        e.preventDefault();
+    });
+}); 
+
+// Prevent F12      
+$(document).keydown(function (event) {
+    if (event.keyCode == 123) { // Prevent F12
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+        return false;
+    }
+});
+
+//stop copy of content
+function killCopy(e){
+    return false
+}
+function reEnable(){
+    return true
+}
+document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=killCopy
+    document.onclick=reEnable
+}
+
+// prevent ctrl + s
+$(document).bind('keydown', function(e) {
+  if(e.ctrlKey && (e.which == 83)) {
+    e.preventDefault();
+    return false;
+  }
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+          
+            return false;
+        } else {
+            return true;
+        }
+};
+
+</script>
+</body>
+</html>
